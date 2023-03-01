@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV_Proyecto</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/perfil.css">
+    <link rel="stylesheet" href="css/habilidades.css">
+    <link rel="stylesheet" href="css/experiencia.css">
+    <link rel="stylesheet" href="css/contacto.css">
+    <script defer src="js/app.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header class="topheader">
+        <nav class="topnav">
+            <a href="#" class="logo">
+                <img src="img/katy.jpg" alt="imagen de katy"
+                height="60" width="50">
+
+                <div>
+                      Katherine Cruz
+                </div>
+            </a>
+            <button class="abrir-menu" aria label="Abrir menú">
+                <img src="img/hamburguesa.png" alt="Abrir menú" width="40" height="40">
+            </button>
+            <ul class="menu">
+                <button class="cerrar-menu" aria label="Cerrar menú">
+                    <img src="img/cerrar.png" alt="Cerrar menú" width="30" height="30">
+                </button>
+                <li><a href="#perfil" class="selected">Perfil</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="horizontal-padding vertical-padding">
+        <section class="perfil" id="perfil">
+            <div>
+                <h1 class="perfil-titulo">Hola mi nombre es <br/> Katherine Cruz </h1>
+                <p class="perfil-detalle">Me considero una persona organizada y con una gran motivación, capaz de adaptarme a cualquier circunstancia y dar siempre lo mejor de mí en cualquier proyecto. Detallista y autodidacta cada día, nunca dejo de aprender.</p>
+            </div>
+            <span>
+                <img class="perfil-img" src="img/katyfoto.jpg" alt="Katy Cruz">
+            </span>
+        </section>
+    </div>
+
+    <img src="img/onda.png" alt="división" class="wave">
+
+    <div class="horizontal-padding vertical-padding">
+        <section class="habilidades" id="habilidades">
+            <h2 class="titulo-habilidades">Habilidades</h2>
+            <ul class="lista-habilidades">
+                <li class="habilidad-habilidades">Pro-activa</li>
+                <li class="habilidad-habilidades">Resolucion de problemas</li>
+                <li class="habilidad-habilidades">Capacidad de adaptación</li>
+                <li class="habilidad-habilidades">Mente abierta</li>
+                <li class="habilidad-habilidades">Capacidad para trabajar en equipo</li>
+            </ul>
+        </section>
+    </div>
+
+    <img src="img/onda.png" alt="división" class="wave">
+
+    <div class="horizontal-padding vertical-padding">
+        <section class="contacto" id="contacto">
+            <h2 class="titulo-contacto">Contacto</h2>
+            <div class="detalle-contacto">
+                <div class="detalle-contacto-grupo">
+                    <p class="contacto-label">Dirección:</p>
+                    <p class="contacto-texto">Tucumán-Argentina</p>
+                </div>
+                <div class="detalle-contacto-grupo">
+                    <p class="contacto-label">E-mail:</p>
+                    <p class="contacto-texto">katycruz33@gmail.com</p>
+                </div>
+                <div class="detalle-contacto-grupo">
+                    <p class="contacto-texto">Deje su mensaje</p>
+                </div>
+            </div>
+
+            <form class="contacto-form">
+                <div class = "contacto-form-grupo">
+                    <label for="name">Nombre</label>
+                    <input required type="text" name="name" id="name"/>
+                </div>
+                <div class = "contacto-form-grupo">
+                    <label for="email">E-mail</label>
+                    <input required type="email" name="email" id="email"/>
+                </div>
+                <div class = "contacto-form-grupo">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea required name="mensaje" id="mensaje" rows="6"></textarea>
+                </div>
+
+                <button type="submit" class="contacto-form-submit">Enviar</button>
+            </form>
+
+            <nav class="social">
+                <ul class="lista-social">
+                    <li>
+                        <a href="https://www.instagram.com/katy_cruzz/" target="_blank">
+                            <img src="img/instagam.jpeg" alt="perfil instagram">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/katherine.cruzz96" target="_blank">
+                            <img src="img/facebook.jpg" alt="perfil facebook">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </div>
+
+    
+
+</body>
+</html>

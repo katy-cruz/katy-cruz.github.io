@@ -1,0 +1,46 @@
+:root {
+
+    --navbar-color-superficial: #dcdada;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section[id] {
+    scroll-margin-top: 70px;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--theme-color);
+    color: var(--texto-color);
+
+    padding-top: 70px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.horizontal-padding {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.vertical-padding {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+@media(min-width:950px) {
+    .horizontal-padding {
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+    
+    .vertical-padding {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+}

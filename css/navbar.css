@@ -1,0 +1,134 @@
+.topheader {
+    box-shadow: 0px 4px var(--navbar-color-superficial);
+    position: fixed;
+    background-color: var(--theme-color);
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.topnav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    max-width: 980px;
+    margin: 0px auto;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: #045FB4;
+}
+
+.logo img {
+    border-radius: 50%;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    padding: 0px 18px;
+}
+
+.menu a {
+    font-size: 20 px;
+    font-weight: 1000;
+    color: black;
+    line-height: 50px;
+    text-transform: uppercase;
+    position: relative;
+
+}
+
+.menu a::after {
+    content: "";
+    background-color: #f4dd10;
+    position: absolute;
+    left: 0;
+    top: calc(100% + 4px);
+    width: 100%;
+    height: 4px;
+
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.menu a.selected::after,
+.menu a:hover::after  {
+    opacity: 0.8;
+}
+
+.menu a:hover {
+    color: #045FB4;
+}
+
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+}
+
+@media (max-width: 950px) {
+    .menu {
+        flex-direction: column;
+        position: fixed;
+        left: 0;
+        top:0;
+        width: 100%;
+        align-items: center;
+        background-color: #686867ea;
+        height: 100%;
+        overflow-y: auto;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s;
+    }
+    
+    .menu li {
+        padding: 0px;
+    }
+    
+    .menu a {
+        color: white;
+        line-height: 60px;
+        font-size: 20px;
+    }
+    
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+    
+    .cerrar-menu {
+        align-self: flex-end;
+        padding: 20px 20px;
+    }
+
+    .menu_opened {
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    .menu a::after {
+        content: none;
+    }
+    
+    
+    .menu a:hover,
+    .menu a.selected {
+        color: #f4dd10;
+    }
+
+}

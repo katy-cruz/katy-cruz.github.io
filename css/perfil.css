@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
+
+.perfil-img {
+    width: 80%;
+    max-width: 350px;
+}
+
+.perfil {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.perfil-titulo {
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0;
+    color: #045FB4;
+    font-family: 'Noto Sans', sans-serif;;
+}
+
+.perfil-detalle {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+    max-width: 550px;
+
+}
+
+@media (min-width:950px) {
+    
+    .perfil-img {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .perfil {
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        max-width: 980px;
+        margin: 20px auto;
+    }
+    
+    .perfil-titulo {
+        font-size: 50px;
+
+    }
+    
+    .perfil-detalle {
+        font-size: 25px;
+        margin: 30px 0;
+    
+    }
+    
+}

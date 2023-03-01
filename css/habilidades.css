@@ -1,0 +1,38 @@
+.habilidades {
+    max-width: 980px;
+    margin: 0 auto;
+    padding-top: 25px;
+    
+}
+
+.titulo-habilidades {
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.habilidad-habilidades {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 20px;
+}
+
+.lista-habilidades {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media (min-width:950px) {
+    .titulo-habilidades {
+        font-size: 50px;
+    }
+    
+    .habilidad-habilidades {
+        font-size: 30px;
+        margin: 20px;
+    }
+}
